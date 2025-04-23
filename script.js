@@ -19,3 +19,6 @@ function getHumanChoice(){
   let answer = prompt("Pick rock, paper or scissors.")
   return answer
 }
+
+let humanScore = 0
+let computerScore = 0
