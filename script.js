@@ -16,11 +16,11 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-  let answer = prompt("Pick rock, paper or scissors.")
-  return answer;
+  let answer = prompt("Pick one: Rock, Paper or Scissors.")
+  return answer.toLowerCase();
 }
 
-let humanChoice = getHumanChoice();
+let userChoice = getHumanChoice();
 let computerChoice = getComputerChoice();
 
 
@@ -49,6 +49,4 @@ function playRound(humanChoice, computerChoice) {
               else {console.log("It's a tie")}
 }
 
-playRound(humanChoice, computerChoice)
-
-console.log(playRound(humanChoice, computerChoice))
+playRound(userChoice, computerChoice)
