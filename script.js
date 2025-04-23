@@ -51,4 +51,4 @@ function playRound(humanChoice, computerChoice) {
 
 playRound(humanChoice, computerChoice)
 
-/console.log(playRound(humanChoice, computerChoice))
+console.log(playRound(humanChoice, computerChoice))
