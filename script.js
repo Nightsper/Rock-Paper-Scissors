@@ -20,9 +20,6 @@ function getHumanChoice(){
   return answer.toLowerCase();
 }
 
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice();
-
 function playGame() {
 let humanScore = 0;
 let computerScore = 0;
@@ -49,3 +46,6 @@ function playRound(humanChoice, computerChoice) {
               else {console.log("It's a tie")}
 }
 }
+
+let humanSelection = getHumanChoice();
+let computerSelection = getComputerChoice();
