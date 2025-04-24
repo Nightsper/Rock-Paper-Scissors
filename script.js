@@ -20,6 +20,21 @@ function getHumanChoice(){
   return answer.toLowerCase();
 }
 
+let humanrnd1 = getHumanChoice();
+let computerrnd1 = getComputerChoice();
+
+let humanrnd2 = getHumanChoice();
+let computerrnd2 = getComputerChoice();
+
+let humanrnd3 = getHumanChoice();
+let computerrnd3 = getComputerChoice();
+
+let humanrnd4 = getHumanChoice();
+let computerrnd4 = getComputerChoice();
+
+let humanrnd5 = getHumanChoice();
+let computerrnd5 = getComputerChoice();
+
 function playGame() {
 let humanScore = 0;
 let computerScore = 0;
@@ -45,7 +60,20 @@ function playRound(humanChoice, computerChoice) {
               console.log(`Computer picked Scissors, You picked Paper. Scissors beat Paper. You lose! Your current score is: ${humanScore} and computer score is: ${computerScore}`)}
               else {console.log("It's a tie")}
 }
+
+playRound(humanrnd1, computerrnd1);
+playRound(humanrnd2, computerrnd2);
+playRound(humanrnd3, computerrnd3);
+playRound(humanrnd4, computerrnd4);
+playRound(humanrnd5, computerrnd5);
+
+if (humanScore > computerScore) {
+  console.log("You won!")
+}
+else if (!(humanScore > computerScore)){
+  console.log("You lost!")
+}
+else {console.log("The game is a tie.")}
 }
 
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice();
+playGame()
