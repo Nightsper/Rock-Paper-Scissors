@@ -1,0 +1,80 @@
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffd6d6;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#gameWin {
+  font-size: 25px;
+}
+
+#textContainer {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  width: auto;
+  height: 200px;
+}
+
+#textContainer div {
+  margin: auto;
+  width: 200px;
+  font-size: 20px;
+}
+
+#cScore {
+  color: red;
+}
+
+#hScore {
+  color: blue;
+}
+
+#resultContainer {
+  display: flex;
+}
+
+#selection {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+#selection #rock {
+  background-color: #af5548;
+  color: whitesmoke;
+}
+
+#selection #paper {
+  background-color: #666666;
+  color: #222222;
+}
+
+#selection #scissors {
+  background-color: #e9e9e9;
+  color: #2d2a29;
+}
+
+#resetContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#reset {
+  margin: 20px 0px 0px 0px;
+  background-color: #ff7a48;
+  color: whitesmoke;
+}
