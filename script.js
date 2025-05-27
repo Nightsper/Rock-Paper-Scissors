@@ -97,6 +97,7 @@ function playRound(humanChoice, computerChoice) {
   if (humanScore == 5) {
     
     result.textContent = "YOU WON THE GAME!"
+    result.style.color = "#EEC900"
     
     buttons.forEach((button) => button.remove())
     
@@ -106,6 +107,7 @@ function playRound(humanChoice, computerChoice) {
   else if (computerScore == 5) {
     
     result.textContent = "YOU LOST THE GAME!"
+    result.style.color = "#ff4d4f"
     
     buttons.forEach((button) => button.remove())
     
@@ -130,10 +132,12 @@ function startOver() {
   ${humanScore}`
   
   result.textContent = "Choose your pick"
+  result.style.color = "#222222"
 }
 
 
 result.textContent = "Choose your pick"
+result.style.color = "#222222"
 
 cScore.textContent = `Computer's score: ${computerScore}`
 
