@@ -29,10 +29,10 @@ let reset = document.querySelector("#reset")
 function getComputerChoice() {
   let random = Math.floor(Math.random() * (2 - 0 + 1) + 0)
   if (random == 0) {
-    return "";
+    return "🪨";
   }
   else if (random == 1) {
-    return "";
+    return "📄";
   }
   else if (random == 2) {
     return "✂️";
@@ -46,37 +46,37 @@ function playRound(humanChoice, computerChoice) {
   resultContainer.appendChild(personChoice)
   
   
-  if (humanChoice == "" && computerChoice == "✂️") {
+  if (humanChoice == "🪨" && computerChoice == "✂️") {
     ++humanScore
     botChoice.textContent = `${computerChoice}`
     personChoice.textContent = `${humanChoice}`
     result.textContent = "You win!"
   }
-  else if (humanChoice == "" && computerChoice == "") {
+  else if (humanChoice == "📄" && computerChoice == "🪨") {
     ++humanScore
     botChoice.textContent = `${computerChoice}`
     personChoice.textContent = `${humanChoice}`
     result.textContent = `You win!`
   }
-  else if (humanChoice == "✂️" && computerChoice == "") {
+  else if (humanChoice == "✂️" && computerChoice == "📄") {
     ++humanScore
     botChoice.textContent = `${computerChoice}`
     personChoice.textContent = `${humanChoice}`
     result.textContent = "You win!"
   }
-  else if (humanChoice == "✂️" && computerChoice == "") {
+  else if (humanChoice == "✂️" && computerChoice == "🪨") {
     ++computerScore
     botChoice.textContent = `${computerChoice}`
     personChoice.textContent = `${humanChoice}`
     result.textContent = "You lose!"
   }
-  else if (humanChoice == "" && computerChoice == "") {
+  else if (humanChoice == "🪨" && computerChoice == "📄") {
     ++computerScore
     botChoice.textContent = `${computerChoice}`
     personChoice.textContent = `${humanChoice}`
     result.textContent = "You lose!"
   }
-  else if (humanChoice == "" && computerChoice == "✂️") {
+  else if (humanChoice == "📄" && computerChoice == "✂️") {
     ++computerScore
     botChoice.textContent = `${computerChoice}`
     personChoice.textContent = `${humanChoice}`
